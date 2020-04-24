@@ -1,9 +1,9 @@
 const Path = require('path');
 const Webpack = require('webpack');
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const docs = require('./webpack.docs.js');
 
-module.exports = merge(common, {
+module.exports = merge(docs, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   output: {
