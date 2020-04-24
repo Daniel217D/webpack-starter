@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: Path.resolve(__dirname, '../src/scripts/index.js')
+    index: Path.resolve(__dirname, '../src/scripts/index.dist.js')
   },
   output: {
     path: Path.join(__dirname, '../dist'),
